@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thomas | Creative Technologist specializing in interactive design, serious games, and digital storytelling.">
-  <title>Thomas | Creative Technologist</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .column:first-child {
+            background-color: #e8f0fe;
+        }
+
+        .column:last-child {
+            background-color: #fde8e8;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="header-container">
-      <h1>Hi, I’m Thomas</h1>
-      <p>Creative Technologist | Digital Storyteller | Serious Games Designer</p>
+    <div class="container">
+        <div class="column">
+            <h1>Left Column</h1>
+            <p>This is the left column where you can add your content. You might use this for navigation, an introduction, or a summary.</p>
+        </div>
+        <div class="column">
+            <h1>Right Column</h1>
+            <p>This is the right column where you can place additional content. Consider using this for a main feature, images, or links.</p>
+        </div>
     </div>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <section class="intro">
-      <h2>Welcome</h2>
-      <p>
-        I am a creative technologist bringing a critical conscientiousness to interactive design and serious games. With a sharp wit and a knack for affecting nuance, I create work that disarms and challenges through an academic approach to digital storytelling and emerging media technology.
-      </p>
-      <a href="portfolio.html" class="btn">Explore My Work</a>
-    </section>
-
-    <section class="highlights">
-      <h2>Featured Projects</h2>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="images/project1-thumbnail.jpg" alt="Out of Order Project">
-          <p><strong>Out of Order:</strong> Interactive Design for Queer Narratives</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/project2-thumbnail.jpg" alt="Matthew Project">
-          <p><strong>Matthew: More Than a Martyr:</strong> A Serious Game on Empathy</p>
-        </div>
-        <div class="gallery-item">
-          <img src="images/project3-thumbnail.jpg" alt="Skate Day App">
-          <p><strong>Skate Day:</strong> A Community App for Outdoor Skaters</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>© 2024 Thomas | <a href="contact.html">Contact Me</a> | <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
-  </footer>
 </body>
 </html>
